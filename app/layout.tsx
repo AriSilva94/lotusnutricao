@@ -28,9 +28,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${nunito.variable} ${lora.variable} antialiased`}>
-        <a href="#content" className="skip-link">
-          Pular para o conteúdo
-        </a>
         <Header />
         {children}
         <WhatsAppFloat />

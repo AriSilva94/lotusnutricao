@@ -8,6 +8,10 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-lotus-burgundy: #88364c;
+  --color-lotus-gold: #dfa677;
+  --color-lotus-border: #d8d5ce;
+  --color-lotus-border-strong: #b5b0a7;
   --font-sans: var(--font-nunito);
   --font-serif: var(--font-lora);
 }
