@@ -24,12 +24,12 @@ export const metadata: Metadata = {
 export default function Home() {
   const franciele = doctors.find((doctor) => doctor.slug === "franciele-lucci");
   const karoline = doctors.find((doctor) => doctor.slug === "karoline-martins");
+  const highlightedDoctors = [franciele, karoline].filter(
+    (doctor): doctor is NonNullable<typeof doctor> => Boolean(doctor),
+  );
 
   return (
-    <main
-      id="content"
-      className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14"
-    >
+    <main id="content" className="mx-auto w-full max-w-6xl px-4 sm:px-6">
       <HeroSection whatsappLink={whatsappLink} />
       <ClinicSection />
       <NutritionBannerSection />
@@ -38,27 +38,7 @@ export default function Home() {
         whatsappLink={whatsappLink}
       />
 
-      <section className="mt-14">
-        <DoctorHighlightSection
-          id="fran"
-          doctor={franciele}
-          backgroundClassName="bg-[#edf2ee]"
-          profileHref="/franciele-lucci"
-          scheduleLabel="Agendar com Franciele"
-          whatsappLink={whatsappLink}
-        />
-      </section>
-
-      <section className="mt-8">
-        <DoctorHighlightSection
-          id="karol"
-          doctor={karoline}
-          backgroundClassName="bg-[#f0ece6]"
-          profileHref="/karoline-martins"
-          scheduleLabel="Agendar com Karoline"
-          whatsappLink={whatsappLink}
-        />
-      </section>
+      <DoctorHighlightSection id="doutoras" doctors={highlightedDoctors} />
 
       <section className="mt-14">
         <TestimonialsCarousel items={testimonials} />
