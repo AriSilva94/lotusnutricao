@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Lora, Nunito } from "next/font/google";
-import { Footer } from "@/components/home/Footer";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import "./globals.css";
