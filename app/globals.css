@@ -8,6 +8,12 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-lotus-rose-100: #ffe2e2;
+  --color-lotus-rose-500: #c85377;
+  --color-lotus-burgundy: #88364c;
+  --color-lotus-gold: #dfa677;
+  --color-lotus-border: #d8d5ce;
+  --color-lotus-border-strong: #b5b0a7;
   --font-sans: var(--font-nunito);
   --font-serif: var(--font-lora);
 }
@@ -57,4 +63,32 @@ h3 {
   html {
     scroll-behavior: auto;
   }
+}
+
+.specialty-flip-card {
+  perspective: 1200px;
+}
+
+.specialty-flip-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 950ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.specialty-flip-card:hover .specialty-flip-inner,
+.specialty-flip-card:focus-within .specialty-flip-inner {
+  transform: rotateX(180deg);
+}
+
+.specialty-flip-face {
+  position: absolute;
+  inset: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.specialty-flip-back {
+  transform: rotateX(180deg);
 }
