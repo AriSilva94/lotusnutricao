@@ -33,7 +33,6 @@ export default function Home() {
       <HeroSection whatsappLink={whatsappLink} />
       <ClinicSection />
       <NutritionBannerSection />
-
       <SpecialtiesSection
         specialties={specialties}
         whatsappLink={whatsappLink}
