@@ -7,7 +7,10 @@ type DoctorHighlightSectionProps = {
   doctors: DoctorHighlightData[];
 };
 
-export function DoctorHighlightSection({ id, doctors }: DoctorHighlightSectionProps) {
+export function DoctorHighlightSection({
+  id,
+  doctors,
+}: DoctorHighlightSectionProps) {
   return (
     <section
       id={id}
@@ -19,7 +22,7 @@ export function DoctorHighlightSection({ id, doctors }: DoctorHighlightSectionPr
         aria-hidden="true"
         width={470}
         height={470}
-        className="pointer-events-none absolute -left-56 top-1/2 hidden h-auto w-[26rem] -translate-y-1/2 opacity-95 md:block lg:-left-36"
+        className="pointer-events-none absolute -left-56 top-1/2 hidden h-auto w-104 -translate-y-1/2 opacity-95 md:block lg:-left-36"
       />
 
       <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6">
@@ -43,7 +46,7 @@ export function DoctorHighlightSection({ id, doctors }: DoctorHighlightSectionPr
             return (
               <article
                 key={doctor.slug}
-                className="flex min-h-[30rem] flex-col items-center rounded-[2rem] bg-[#ececec] px-6 py-10 text-center sm:px-8"
+                className="flex min-h-120 flex-col items-center rounded-4xl bg-[#ececec] px-6 py-10 text-center sm:px-8"
               >
                 {isKaroline ? (
                   <Image
@@ -54,7 +57,10 @@ export function DoctorHighlightSection({ id, doctors }: DoctorHighlightSectionPr
                     className="h-54 w-54 rounded-full object-cover sm:h-58 sm:w-58"
                   />
                 ) : (
-                  <div className="h-54 w-54 sm:h-58 sm:w-58" aria-hidden="true" />
+                  <div
+                    className="h-54 w-54 sm:h-58 sm:w-58"
+                    aria-hidden="true"
+                  />
                 )}
 
                 <h3 className="mt-8 text-[1.9rem] leading-[1.1] font-bold text-lotus-burgundy sm:text-[2.1rem]">

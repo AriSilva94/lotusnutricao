@@ -40,7 +40,7 @@ export default function Home() {
 
       <DoctorHighlightSection id="doutoras" doctors={highlightedDoctors} />
 
-      <section className="mt-14">
+      <section>
         <TestimonialsCarousel items={testimonials} />
       </section>
 

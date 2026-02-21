@@ -154,15 +154,15 @@ export const doctors: DoctorProfile[] = [
 
 export const testimonials: Testimonial[] = [
   {
-    author: "Rodolfo Barbosa",
-    text: "Atendimento humano, plano alimentar viável e resultados consistentes no meu dia a dia.",
+    author: "Lós Torres",
+    text: "Clinica diferenciada, designer diferenciado, atendimento espetacular, profissionais que sabem entender oque estamos precisando... super recomendo..",
   },
   {
-    author: "Grazi Silva",
-    text: "Me senti acolhida desde a primeira consulta. A evolução veio sem radicalismo.",
+    author: "Celso Oikawa",
+    text: "Ótima clínica, atendimento diferenciado, planos de alimentação são individualizados respeitando as características de cada pessoa.",
   },
   {
-    author: "Paciente da Clínica Lótus",
-    text: "Equipe atenciosa, explicações claras e acompanhamento que realmente funciona.",
+    author: "Alvaro Seiji Ito",
+    text: "Excelente atendimento, ótima localização e ambiente. Profissionais muito atenciosa.",
   },
 ];
