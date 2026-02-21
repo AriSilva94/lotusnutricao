@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ClinicSection } from "@/components/home/ClinicSection";
+import { ContactSection } from "@/components/home/ContactSection";
 import { DoctorHighlightSection } from "@/components/home/DoctorHighlightSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { SiteFooter } from "@/components/home/SiteFooter";
@@ -43,6 +44,8 @@ export default function Home() {
       <section>
         <TestimonialsCarousel items={testimonials} />
       </section>
+
+      <ContactSection whatsappLink={whatsappLink} />
 
       <SiteFooter clinicAddress={clinicAddress} socialLinks={socialLinks} />
     </main>
