@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ClinicSection } from "@/components/home/ClinicSection";
 import { ContactSection } from "@/components/home/ContactSection";
 import { DoctorHighlightSection } from "@/components/home/DoctorHighlightSection";
+import { ExclusiveContentSection } from "@/components/home/ExclusiveContentSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { SiteFooter } from "@/components/home/SiteFooter";
 import { NutritionBannerSection } from "@/components/home/NutritionBannerSection";
@@ -46,6 +47,7 @@ export default function Home() {
       </section>
 
       <ContactSection whatsappLink={whatsappLink} />
+      <ExclusiveContentSection />
 
       <SiteFooter clinicAddress={clinicAddress} socialLinks={socialLinks} />
     </main>
