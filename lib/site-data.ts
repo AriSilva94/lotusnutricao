@@ -20,7 +20,7 @@ export type Testimonial = {
 export const whatsappNumber = "5511989706917";
 
 export const whatsappMessage =
-  "Olá! Quero agendar uma consulta com a Clínica Lótus Vida & Nutrição.";
+  "Olá, gostaria de mais informações sobre os atendimentos da Clínica Lótus.";
 
 export const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
   whatsappMessage,
