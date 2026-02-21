@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Lora, Nunito } from "next/font/google";
+import { Footer } from "@/components/home/Footer";
 import { Header } from "@/components/Header";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import "./globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${nunito.variable} ${lora.variable} antialiased`}>
         <Header />
         {children}
+        <Footer />
         <WhatsAppFloat />
       </body>
     </html>

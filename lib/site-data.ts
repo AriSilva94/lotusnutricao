@@ -31,8 +31,8 @@ export const clinicAddress =
   "Rua Hilda Del Nero Bisquolo, 102, Sala 708, Jundiaí - SP";
 
 export const socialLinks = {
-  instagram: "https://www.instagram.com/clinicalotusjundiai",
-  facebook: "https://www.facebook.com/clinicalotusjundiai",
+  instagram: "http://instagram.com/clinicalotusjundiai",
+  facebook: "https://web.facebook.com/profile.php?id=100084080512664",
 };
 
 export const specialties: Specialty[] = [

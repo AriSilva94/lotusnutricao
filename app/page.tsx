@@ -4,14 +4,11 @@ import { ContactSection } from "@/components/home/ContactSection";
 import { DoctorHighlightSection } from "@/components/home/DoctorHighlightSection";
 import { ExclusiveContentSection } from "@/components/home/ExclusiveContentSection";
 import { HeroSection } from "@/components/home/HeroSection";
-import { SiteFooter } from "@/components/home/SiteFooter";
 import { NutritionBannerSection } from "@/components/home/NutritionBannerSection";
 import { SpecialtiesSection } from "@/components/home/SpecialtiesSection";
 import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import {
-  clinicAddress,
   doctors,
-  socialLinks,
   specialties,
   testimonials,
   whatsappLink,
@@ -48,8 +45,6 @@ export default function Home() {
 
       <ContactSection whatsappLink={whatsappLink} />
       <ExclusiveContentSection />
-
-      <SiteFooter clinicAddress={clinicAddress} socialLinks={socialLinks} />
     </main>
   );
 }
