@@ -36,7 +36,7 @@ export function HeroSection({ whatsappLink }: HeroSectionProps) {
               PERSONALIZADO
             </h1>
 
-            <ul className="mt-8 space-y-2.5 pl-6 text-lg leading-8 sm:text-[2rem] sm:leading-11">
+            <ul className="mt-8 space-y-2.5 pl-10 md:pl-6 text-lg leading-8 sm:text-[2rem] sm:leading-11">
               {treatments.map((treatment) => (
                 <li key={treatment} className="list-disc">
                   {treatment}

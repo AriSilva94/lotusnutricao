@@ -42,9 +42,10 @@ export function SpecialtiesSection({
         {specialties.map((specialty) => (
           <article
             key={specialty.title}
-            className="group w-full overflow-hidden perspective-distant"
+            tabIndex={0}
+            className="group w-full overflow-hidden perspective-distant focus:outline-none"
           >
-            <div className="relative aspect-5/4 w-full transition-transform duration-950 ease-[cubic-bezier(0.25,0.8,0.25,1)] transform-3d group-hover:transform-[rotateX(180deg)]">
+            <div className="relative aspect-5/4 w-full transition-transform duration-950 ease-[cubic-bezier(0.25,0.8,0.25,1)] transform-3d group-hover:transform-[rotateX(180deg)] group-focus-within:transform-[rotateX(180deg)]">
               <div
                 className="absolute inset-0 overflow-hidden"
                 style={cardFaceStyle}
