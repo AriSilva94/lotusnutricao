@@ -8,6 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-lotus-rose-100: #ffe2e2;
   --color-lotus-rose-500: #c85377;
   --color-lotus-burgundy: #88364c;
   --color-lotus-gold: #dfa677;

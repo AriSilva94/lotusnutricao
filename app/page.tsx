@@ -3,6 +3,7 @@ import { ClinicSection } from "@/components/home/ClinicSection";
 import { DoctorHighlightSection } from "@/components/home/DoctorHighlightSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { SiteFooter } from "@/components/home/SiteFooter";
+import { NutritionBannerSection } from "@/components/home/NutritionBannerSection";
 import { SpecialtiesSection } from "@/components/home/SpecialtiesSection";
 import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import {
@@ -25,10 +26,18 @@ export default function Home() {
   const karoline = doctors.find((doctor) => doctor.slug === "karoline-martins");
 
   return (
-    <main id="content" className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
+    <main
+      id="content"
+      className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14"
+    >
       <HeroSection whatsappLink={whatsappLink} />
       <ClinicSection />
-      <SpecialtiesSection specialties={specialties} whatsappLink={whatsappLink} />
+      <NutritionBannerSection />
+
+      <SpecialtiesSection
+        specialties={specialties}
+        whatsappLink={whatsappLink}
+      />
 
       <section className="mt-14">
         <DoctorHighlightSection
