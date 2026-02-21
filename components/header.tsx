@@ -13,8 +13,8 @@ type NavItem = {
 
 const navItems: NavItem[] = [
   { label: "Conheça a Clínica", href: "/#aclinica" },
-  { label: "Dra Franciele", href: "/#fran" },
-  { label: "Dra Karoline Martins", href: "/#karol" },
+  { label: "Dra. Franciele", href: "/#fran" },
+  { label: "Dra. Karoline Martins", href: "/#karol" },
   { label: "Especialidades", href: "/#Trabalho", highlight: true },
   { label: "Agende sua Consulta", href: whatsappLink },
 ];
